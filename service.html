@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【実習】サービス・料金｜YUKIHAKO</title>
+  <meta name="description" content="YUKIHAKOのレンタルプランと料金、よくある質問。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 課題の条件：ページ冒頭に入れる一文 -->
+  <p class="practice-note">本サイトは講義課題として制作したものです。</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.svg" alt="" width="36" height="36"><span>YUKIHAKO</span></a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html" aria-current="page">サービス・料金</a></li>
+        <li><a href="about.html">会社概要</a></li>
+        <li><a href="contact.html" class="btn small">予約・お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <h1>サービス・料金</h1>
+        <p>料金はすべて税込・往復送料込み。1泊2日からご利用いただけます。</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">レンタルプラン（1泊2日）</h2>
+        <p class="section-lead">3泊以上は1日あたり1,000円の追加でご利用いただけます。</p>
+        <div class="plans">
+          <div class="plan">
+            <h3>ギアだけプラン</h3>
+            <p class="price">5,800円<small> / 人</small></p>
+            <ul><li>スキー板 or スノーボード</li><li>ブーツ・ストック／ビンディング</li><li>往復送料込み</li></ul>
+            <a href="contact.html" class="btn outline">このプランで見積もり</a>
+          </div>
+          <div class="plan recommend">
+            <h3>まるごとプラン</h3>
+            <p class="price">8,900円<small> / 人</small></p>
+            <ul><li>ギアだけプランの内容</li><li>ウェア上下</li><li>ゴーグル・グローブ・ヘルメット</li></ul>
+            <a href="contact.html" class="btn">このプランで見積もり</a>
+          </div>
+          <div class="plan">
+            <h3>サークル団体プラン</h3>
+            <p class="price">15%OFF<small> 10名〜</small></p>
+            <ul><li>上記プランをまとめて割引</li><li>幹事さん用の一括管理ページ</li><li>サイズ表の共有リンク</li></ul>
+            <a href="contact.html" class="btn outline">団体で見積もり</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title" style="text-align:left">安心のサポート</h2>
+          <p>レンタル品はすべて使用後にプロがチューンナップ・クリーニングしています。万一の破損も、安心補償（1人300円）に加入していれば自己負担はありません。</p>
+          <p style="margin-top:12px">天候不良で旅行が中止になった場合は、出発前日までのご連絡でキャンセル料無料です。</p>
+        </div>
+        <picture><source media="(max-width: 768px)" srcset="images/flow-sp.svg"><img src="images/flow.svg" alt="ご利用の流れの図" width="880" height="200" style="margin-inline:auto"></picture>
+      </div>
+    </section>
+
+    <section>
+      <div class="container faq">
+        <h2 class="section-title">よくある質問</h2>
+        <p class="section-lead">ご不明な点はお気軽にお問い合わせください。</p>
+        <details><summary>Q. いつまでに予約すればいいですか？</summary><p>出発日の3日前までにご予約ください。年末年始は混み合うため、2週間前までのご予約をおすすめします。</p></details>
+        <details><summary>Q. 届け先はどこでも大丈夫ですか？</summary><p>宿泊先（ホテル・旅館・ペンション）であれば全国どこでもお届けします。事前に宿へお荷物の受け取りをご確認ください。</p></details>
+        <details><summary>Q. 返却はどうすればいいですか？</summary><p>届いた箱に入れて、同梱の着払い伝票を貼り、宿のフロントからお送りください。</p></details>
+        <details><summary>Q. サイズが合わなかったら？</summary><p>到着日にご連絡いただければ、最短翌日に交換品をお送りします（交換送料無料）。</p></details>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>次の雪山は、手ぶらで行こう。</h2>
+        <p>出発の3日前まで予約OK。サークルの人数分まとめて申し込めます。</p>
+        <a href="contact.html" class="btn">無料で見積もりする</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav>
+        <a href="index.html">ホーム</a><a href="service.html">サービス・料金</a><a href="about.html">会社概要</a><a href="contact.html">お問い合わせ</a>
+      </nav>
+      <p>株式会社ユキハコ（架空の企業です）</p>
+      <p><small>&copy; 2026 YUKIHAKO / This site is created as a course exercise.</small></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

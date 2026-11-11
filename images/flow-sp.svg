@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 520" role="img" aria-label="ご利用の流れ：1 Webで予約、2 宿にお届け、3 思いきり滑る、4 箱で返却">
+  <g font-family="sans-serif" font-size="20" font-weight="700" fill="#1d3557">
+    <g fill="#a8dadc"><path d="M60 112 l-10 0 l10 18 l10 -18 Z"/><path d="M60 242 l-10 0 l10 18 l10 -18 Z"/><path d="M60 372 l-10 0 l10 18 l10 -18 Z"/></g>
+    <!-- 1 -->
+    <circle cx="60" cy="60" r="46" fill="#1d3557"/>
+    <rect x="45" y="38" width="30" height="44" rx="5" fill="#fff"/><rect x="50" y="45" width="20" height="26" fill="#a8dadc"/>
+    <text x="125" y="67">① Webで予約</text>
+    <!-- 2 -->
+    <circle cx="60" cy="190" r="46" fill="#1d3557"/>
+    <rect x="34" y="176" width="34" height="24" fill="#fff"/><path d="M68 182 h12 l8 9 v9 h-20 Z" fill="#fff"/>
+    <circle cx="44" cy="203" r="6" fill="#e76f51"/><circle cx="78" cy="203" r="6" fill="#e76f51"/>
+    <text x="125" y="197">② 宿にお届け</text>
+    <!-- 3 -->
+    <circle cx="60" cy="320" r="46" fill="#1d3557"/>
+    <path d="M30 340 L90 302" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M38 346 L98 308" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="72" cy="298" r="7" fill="#e76f51"/>
+    <text x="125" y="327">③ 思いきり滑る</text>
+    <!-- 4 -->
+    <circle cx="60" cy="450" r="46" fill="#1d3557"/>
+    <rect x="38" y="440" width="44" height="30" rx="3" fill="#d9a066"/><rect x="35" y="433" width="50" height="10" rx="2" fill="#c58a4f"/>
+    <rect x="55" y="433" width="10" height="37" fill="#e76f51"/>
+    <text x="125" y="457">④ 箱で返却</text>
+  </g>
+</svg>

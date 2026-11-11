@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【実習】予約・お問い合わせ｜YUKIHAKO</title>
+  <meta name="description" content="YUKIHAKOへの予約・見積もり・お問い合わせフォーム。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 課題の条件：ページ冒頭に入れる一文 -->
+  <p class="practice-note">本サイトは講義課題として制作したものです。</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.svg" alt="" width="36" height="36"><span>YUKIHAKO</span></a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html">サービス・料金</a></li>
+        <li><a href="about.html">会社概要</a></li>
+        <li><a href="contact.html" class="btn small">予約・お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <h1>予約・お問い合わせ</h1>
+        <p>見積もりは無料です。24時間以内に担当者からご連絡します。</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <form class="form" id="contact-form">
+          <label for="name">お名前</label>
+          <input id="name" name="name" type="text" placeholder="雪山 太郎" required>
+
+          <label for="email">メールアドレス</label>
+          <input id="email" name="email" type="email" placeholder="example@example.com" required>
+
+          <label for="plan">ご希望のプラン</label>
+          <select id="plan" name="plan">
+            <option>ギアだけプラン</option>
+            <option selected>まるごとプラン</option>
+            <option>サークル団体プラン</option>
+            <option>まだ決めていない</option>
+          </select>
+
+          <label for="people">人数</label>
+          <input id="people" name="people" type="number" min="1" value="1">
+
+          <label for="date">出発日</label>
+          <input id="date" name="date" type="date">
+
+          <label for="message">ご質問・ご要望</label>
+          <textarea id="message" name="message" rows="5" placeholder="宿泊先や身長・靴のサイズなど、わかる範囲でご記入ください"></textarea>
+
+          <button type="submit" class="btn">この内容で送信する</button>
+          <p class="note">※本サイトは講義課題のため、送信しても実際には届きません。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav>
+        <a href="index.html">ホーム</a><a href="service.html">サービス・料金</a><a href="about.html">会社概要</a><a href="contact.html">お問い合わせ</a>
+      </nav>
+      <p>株式会社ユキハコ（架空の企業です）</p>
+      <p><small>&copy; 2026 YUKIHAKO / This site is created as a course exercise.</small></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

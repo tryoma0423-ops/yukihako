@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="雪山とレンタル用品が入った箱のイラスト">
+  <!-- 空 -->
+  <rect width="480" height="360" rx="24" fill="#cfe9ec"/>
+  <circle cx="390" cy="70" r="30" fill="#fff6d6"/>
+  <!-- 山 -->
+  <path d="M0 260 L120 110 L200 200 L290 80 L480 270 L480 360 L0 360 Z" fill="#457b9d"/>
+  <path d="M120 110 L150 147 L130 150 L110 140 L95 142 Z" fill="#fff"/>
+  <path d="M290 80 L330 120 L305 125 L285 112 L262 116 Z" fill="#fff"/>
+  <!-- 雪の地面 -->
+  <path d="M0 280 Q120 240 240 275 T480 260 L480 360 L0 360 Z" fill="#ffffff"/>
+  <!-- 箱 -->
+  <g transform="translate(150 230)">
+    <rect x="0" y="20" width="140" height="90" rx="6" fill="#d9a066"/>
+    <rect x="-6" y="8" width="152" height="22" rx="4" fill="#c58a4f"/>
+    <rect x="60" y="8" width="20" height="102" fill="#e76f51"/>
+    <text x="70" y="78" font-family="sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">YUKIHAKO</text>
+    <!-- 箱から出ているスキー板 -->
+    <rect x="18" y="-80" width="10" height="95" rx="5" fill="#1d3557" transform="rotate(-8 23 -30)"/>
+    <rect x="34" y="-78" width="10" height="93" rx="5" fill="#1d3557" transform="rotate(-4 39 -30)"/>
+    <!-- スノーボード -->
+    <rect x="96" y="-70" width="24" height="86" rx="12" fill="#e76f51" transform="rotate(10 108 -30)"/>
+  </g>
+  <!-- 雪の粒 -->
+  <g fill="#fff">
+    <circle cx="60" cy="60" r="4"/><circle cx="150" cy="40" r="3"/><circle cx="230" cy="70" r="4"/>
+    <circle cx="330" cy="40" r="3"/><circle cx="440" cy="140" r="4"/><circle cx="40" cy="170" r="3"/>
+    <circle cx="200" cy="130" r="3"/><circle cx="420" cy="210" r="3"/>
+  </g>
+</svg>

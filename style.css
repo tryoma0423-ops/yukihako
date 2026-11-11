@@ -1,0 +1,139 @@
+/* ===== 基本設定（色や文字をまとめて管理） ===== */
+:root {
+  --navy: #1d3557;       /* メインカラー：信頼感のある紺 */
+  --sky: #a8dadc;        /* サブカラー：雪山の空色 */
+  --snow: #f7fbfc;       /* 背景：雪の白 */
+  --orange: #e76f51;     /* アクセント：ボタン（CTA）用 */
+  --text: #22303c;
+  --muted: #5b6b78;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  color: var(--text);
+  background: var(--snow);
+  line-height: 1.8;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--navy); }
+
+.container { width: min(1080px, 100% - 32px); margin-inline: auto; }
+
+/* ===== 講義課題の注記 ===== */
+.practice-note {
+  background: #fff3cd;
+  color: #6b5200;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 6px 16px;
+}
+
+/* ===== ヘッダーとナビゲーション ===== */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e3ecef;
+  position: sticky; top: 0; z-index: 10;
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 1.25rem; letter-spacing: 0.05em; color: var(--navy); }
+.site-nav ul { display: flex; gap: 28px; list-style: none; align-items: center; }
+.site-nav a { text-decoration: none; font-weight: 500; }
+.site-nav a[aria-current="page"] { border-bottom: 3px solid var(--sky); }
+.nav-toggle { display: none; background: none; border: 0; font-size: 1.6rem; color: var(--navy); cursor: pointer; }
+
+/* ===== ボタン ===== */
+.btn {
+  display: inline-block;
+  background: var(--orange); color: #fff;
+  padding: 14px 32px; border-radius: 999px;
+  font-weight: 700; text-decoration: none;
+  box-shadow: 0 4px 0 #b9533b;
+  transition: transform .15s;
+}
+.btn:hover { transform: translateY(2px); box-shadow: 0 2px 0 #b9533b; }
+.btn.small { padding: 8px 20px; box-shadow: none; }
+.btn.outline { background: #fff; color: var(--navy); border: 2px solid var(--navy); box-shadow: none; }
+
+/* ===== ヒーロー（トップの大きな部分） ===== */
+.hero { background: linear-gradient(180deg, #dff1f3 0%, var(--snow) 100%); padding: 56px 0 40px; }
+.hero-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
+.hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.4; color: var(--navy); margin-bottom: 16px; }
+.hero p { color: var(--muted); margin-bottom: 28px; }
+.page-hero { background: #dff1f3; padding: 48px 0 32px; }
+.page-hero h1 { color: var(--navy); font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
+.page-hero p { color: var(--muted); }
+
+/* ===== セクション共通 ===== */
+section { padding: 64px 0; }
+.section-title { text-align: center; font-size: clamp(1.4rem, 3vw, 1.9rem); color: var(--navy); margin-bottom: 8px; }
+.section-lead { text-align: center; color: var(--muted); margin-bottom: 40px; }
+.bg-white { background: #fff; }
+
+/* ===== カード ===== */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card { background: #fff; border-radius: var(--radius); padding: 28px; box-shadow: 0 6px 20px rgba(29,53,87,.08); }
+.card .icon { font-size: 2rem; margin-bottom: 8px; }
+.card h3 { color: var(--navy); margin-bottom: 8px; font-size: 1.15rem; }
+.card p { color: var(--muted); font-size: 0.95rem; }
+
+/* ===== 料金プラン ===== */
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.plan { background: #fff; border: 2px solid #e3ecef; border-radius: var(--radius); padding: 32px 24px; text-align: center; }
+.plan.recommend { border-color: var(--orange); position: relative; }
+.plan.recommend::before { content: "人気No.1"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--orange); color: #fff; font-size: .8rem; padding: 2px 14px; border-radius: 999px; }
+.plan h3 { color: var(--navy); }
+.price { font-size: 2rem; font-weight: 800; color: var(--navy); margin: 8px 0; }
+.price small { font-size: .9rem; font-weight: 500; color: var(--muted); }
+.plan ul { list-style: none; text-align: left; margin: 16px 0 24px; }
+.plan li { padding: 6px 0; border-bottom: 1px dashed #e3ecef; font-size: .95rem; }
+.plan li::before { content: "✓ "; color: var(--orange); font-weight: 700; }
+
+/* ===== 表（会社概要） ===== */
+.info-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: var(--radius); overflow: hidden; }
+.info-table th, .info-table td { padding: 16px 20px; border-bottom: 1px solid #e3ecef; text-align: left; vertical-align: top; }
+.info-table th { width: 28%; background: #eef7f8; color: var(--navy); font-weight: 700; }
+
+/* ===== FAQ ===== */
+.faq details { background: #fff; border-radius: 10px; padding: 16px 20px; margin-bottom: 12px; }
+.faq summary { font-weight: 700; color: var(--navy); cursor: pointer; }
+.faq details p { margin-top: 8px; color: var(--muted); }
+
+/* ===== 2カラム ===== */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+
+/* ===== CTA帯 ===== */
+.cta-band { background: var(--navy); color: #fff; text-align: center; }
+.cta-band h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); margin-bottom: 8px; }
+.cta-band p { opacity: .85; margin-bottom: 24px; }
+
+/* ===== フォーム ===== */
+.form { background: #fff; padding: 32px; border-radius: var(--radius); max-width: 640px; margin-inline: auto; }
+.form label { display: block; font-weight: 700; margin: 16px 0 6px; color: var(--navy); }
+.form input, .form select, .form textarea { width: 100%; padding: 12px; border: 1px solid #c9d6dc; border-radius: 8px; font: inherit; }
+.form button { margin-top: 24px; border: 0; cursor: pointer; width: 100%; font-size: 1rem; }
+.form .note { font-size: .85rem; color: var(--muted); margin-top: 12px; }
+
+/* ===== フッター ===== */
+.site-footer { background: #13253d; color: #cfdbe3; padding: 32px 0; font-size: .9rem; text-align: center; }
+.site-footer nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+.site-footer a { color: #fff; text-decoration: none; }
+
+/* ===== スマートフォン対応（画面幅768px以下） ===== */
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  .site-nav { display: none; position: absolute; top: 64px; left: 0; right: 0; background: #fff; border-bottom: 1px solid #e3ecef; }
+  .site-nav.open { display: block; }
+  .site-nav ul { flex-direction: column; gap: 0; padding: 8px 16px 16px; align-items: stretch; }
+  .site-nav li a { display: block; padding: 12px 0; border-bottom: 1px solid #f0f4f6; }
+  .site-nav .btn.small { text-align: center; margin-top: 12px; }
+  .hero-inner, .two-col, .cards, .plans { grid-template-columns: 1fr; }
+  .hero { padding-top: 32px; text-align: center; }
+  section { padding: 44px 0; }
+  .info-table th, .info-table td { display: block; width: 100%; }
+  .info-table th { border-bottom: 0; padding-bottom: 4px; }
+  .form { padding: 20px; }
+}

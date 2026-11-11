@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" role="img" aria-label="ご利用の流れ：1 Webで予約、2 宿にお届け、3 思いきり滑る、4 箱に入れて返却">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#a8dadc"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" text-anchor="middle">
+    <!-- 矢印 -->
+    <g stroke="#a8dadc" stroke-width="4" marker-end="url(#arrow)">
+      <line x1="170" y1="80" x2="250" y2="80"/>
+      <line x1="390" y1="80" x2="470" y2="80"/>
+      <line x1="610" y1="80" x2="690" y2="80"/>
+    </g>
+    <!-- 1 予約 -->
+    <circle cx="100" cy="80" r="60" fill="#1d3557"/>
+    <rect x="80" y="52" width="40" height="56" rx="6" fill="#fff"/>
+    <rect x="86" y="60" width="28" height="34" fill="#a8dadc"/>
+    <text x="100" y="175" font-size="18" font-weight="700" fill="#1d3557">① Webで予約</text>
+    <!-- 2 お届け -->
+    <circle cx="320" cy="80" r="60" fill="#1d3557"/>
+    <rect x="288" y="62" width="44" height="32" fill="#fff"/>
+    <path d="M332 70 h16 l10 12 v12 h-26 Z" fill="#fff"/>
+    <circle cx="300" cy="98" r="7" fill="#e76f51"/><circle cx="345" cy="98" r="7" fill="#e76f51"/>
+    <text x="320" y="175" font-size="18" font-weight="700" fill="#1d3557">② 宿にお届け</text>
+    <!-- 3 滑る -->
+    <circle cx="540" cy="80" r="60" fill="#1d3557"/>
+    <path d="M500 105 L580 55" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <path d="M510 112 L590 62" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="555" cy="52" r="8" fill="#e76f51"/>
+    <text x="540" y="175" font-size="18" font-weight="700" fill="#1d3557">③ 思いきり滑る</text>
+    <!-- 4 返却 -->
+    <circle cx="760" cy="80" r="60" fill="#1d3557"/>
+    <rect x="732" y="66" width="56" height="38" rx="4" fill="#d9a066"/>
+    <rect x="728" y="58" width="64" height="12" rx="3" fill="#c58a4f"/>
+    <rect x="754" y="58" width="12" height="46" fill="#e76f51"/>
+    <text x="760" y="175" font-size="18" font-weight="700" fill="#1d3557">④ 箱で返却</text>
+  </g>
+</svg>
